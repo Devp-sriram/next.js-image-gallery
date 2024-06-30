@@ -27,7 +27,7 @@ export default async function page(){
             height = {height}
             className= 'rounded shadow mw-100 h-100'
             />
-            by <Link href={"/users/"+image.user.username}>{image.user.username}</Link>
+            by <Link href={"/user/"+image.user.username}>{image.user.username}</Link>
         </div>
     )
 }
