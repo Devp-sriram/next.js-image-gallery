@@ -3,13 +3,13 @@ import Image from 'next/image'
 import styles from'./topic.module.css'
 import {Alert} from '@/components/bootstrap'
 import {Metadata} from 'next'
-import { title } from 'process';
 
 export const revalidate = 0;
 
 interface PageProps{
     params:{ topic : string},
 }
+
 
 export function generateMetadata({params:{ topic }}:PageProps) : Metadata{
     return{
