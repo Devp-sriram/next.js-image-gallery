@@ -14,14 +14,17 @@ export default function NavBar(){
                 <Navbar.Toggle aria-controls="main-navbar"/>
                 <Navbar.Collapse id='mian-navbar'>
                     <Nav>
-                        <Nav.Link as={Link} href="/static" active={pathName==='./static'}>static</Nav.Link>
-                        <Nav.Link as={Link} href="/dynamic" active={pathName==='./dynamic'}>dynamic</Nav.Link>
+                        <Nav.Link as={Link} href="/static" active={pathName==='./static'}>Static</Nav.Link>
+                        <Nav.Link as={Link} href="/dynamic" active={pathName==='./dynamic'}>Dynamic</Nav.Link>
                         <Nav.Link as={Link} href="/isr" active={pathName==='./isr'}>Isr</Nav.Link>
                         <NavDropdown title="topics" id='topics-dropdown'>
                             <NavDropdown.Item as={Link} href="/topics/tech">tech</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/topics/codding">codding</NavDropdown.Item>
                             <NavDropdown.Item as={Link} href="/topics/ai">ai</NavDropdown.Item>
                         </NavDropdown>
+                        <Nav.Link as={Link} href="/search" active={pathName==='./search'}>Search</Nav.Link>
+
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
